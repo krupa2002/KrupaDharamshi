@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krupa Dharamshi's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav-icon1" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="dropdown-menu" class="hidden">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <section id="home" class="home"></section>
+    <div class="main-content">
+        <!-- Main content goes here -->
+    </div>
+
+    <section id="about" class="about-me">
+        <div class="about-content">
+            <img src="templates/WhatsApp Image 2021-11-20 at 10.36.54.jpeg" alt="Professional Picture" class="about-image">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>B.E. in AI & ML from Mumbai University.</h3>
+                    </div>
+                    <br>
+                    <div class="timeline-item">
+                        <h3>Projects: Developed a movie recommendation system, a mental health chatbot using AI, and many more.</h3>
+                    </div>
+                    <br>
+                    <div class="timeline-item">
+                        <h3>Skills: Expertise in machine learning, data analysis, and web development.</h3>
+                    </div>
+                    <br>
+                    <div class="timeline-item">
+                        <h3>Hobbies: I enjoy practicing Indian art and craft in my free time.</h3>
+                    </div>
+                    <br>
+                    <!-- <a href="#more-about-me" class="button highlighted">Know More About Me and My Work</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills and Blogs Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-content">
+            <div class="skills-box">
+                <h1>Projects and Skills</h1>
+
+                <!-- Projects -->
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-description">
+                            <h3>Movie Recommendation System</h3>
+                            <br>
+                            <p>Content based filtering
+                                Utilizing a dataset comprising 5000 movies. Employed Python
+                                for data preprocessing, feature extraction, and machine learning
+                                model development.
+                                Analyzed movie attributes, created content profiles, and
+                                developed a recommendation algorithm for personalized movie
+                                suggestions based on user preferences.</p>
+                                <br>
+                                <p><b>TechStack</b>:Python,Flask, Anaconda(Jupyter Notebook),
+                                    Streamlit, tmdbs API.</p>
+                            <a href="https://github.com/krupa2002/Movie_recommendation_krupa" class = "button highlighted">GitHub Link</a>
+                        </div>
+                        <img src="templates/mr.png" alt="Movie Recommendation System">
+                    </div>
+                    <div class="project">
+                        <img src="templates/Screenshot 2024-08-15 at 11.15.07 AM.png" alt="Chatbot">
+                        <div class="project-description">
+                            <h3>Mental Health Chatbot</h3>
+                            <br>
+                            <p>Developed a mental health chatbot utilizing generative AI for
+                                natural language understanding and response generation.
+                                Integrated a knowledge base within Botpress to provide relevant
+                                information and support to users.</p>
+                                <br>
+                                <p><b>TechStack</b>: Botpress, Generative AI, Prompt Engineering, AI
+                                    training, Knowledge base.</p>
+                            <a href="https://mediafiles.botpress.cloud/1b9ac641-f525-44bb-b4c9-51c44f72f190/webchat/bot.html" class = "button highlighted">Chatbot Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kaggle ML Section -->
+                <div class="kaggle-ml">
+                    <h3>Kaggle - ML Projects</h3>
+                    <br>
+                    <div class="kaggle-project">
+                        <div class="kaggle-description">
+
+                            <h4><span class="highlighted-text">Predicting CO2 Emissions with Linear Regression</span></h4><br>
+                            <p>Leveraged linear regression to model the relationship between vehicle engine size, cylinders, and fuel consumption to predict CO2 emissions. Achieved insights through data visualization and model evaluation metrics.</p>
+                            <a href="https://www.kaggle.com/code/krupadharamshi/linear-regression-krupa" class="button highlighted">Linear Regression Kaggle Link</a>
+                        </div>
+                        <div class="kaggle-description"><br>
+                            <h4 ><span class="highlighted-text"> XGBoost Model for Kaggle Competition</span></h4><br>
+                            <p>Developed an XGBoost model to predict house prices, achieving high accuracy in a Kaggle competition. Utilized feature engineering and hyperparameter tuning to enhance performance.</p>
+                            <a href="https://www.kaggle.com/code/krupadharamshi/house-prices-using-xgboost" class = "button highlighted">XGBoost Kaggle Link</a>
+                        </div>
+                        
+                    </div>
+                    <div class="kaggle-project">
+                        <div class="kaggle-description">
+                            <h4><span class="highlighted-text"> Customer Segmentation with K-Means</span></h4><br>
+                            <p> Implemented K-Means clustering to categorize customers into distinct segments based on purchasing behavior. Enhanced marketing strategies by identifying key patterns and trends within each cluster.</p>
+                            <a href="https://www.kaggle.com/code/krupadharamshi/clustering-kdp" class="button highlighted">Clustering Kaggle Link</a>
+                        </div>
+                    
+                        <div class="kaggle-description"><br>
+                            <h4><span class="highlighted-text"> Breast Cancer Classification with SVM</span></h4><br>
+                            <p>Implemented a Support Vector Machine (SVM) to distinguish between malignant and benign breast tumors using patient data. Focused on data normalization and model fine-tuning to enhance classification accuracy.</p>
+                            <a href="https://www.kaggle.com/code/krupadharamshi/svm-model-krupa" class="button highlighted">SVM Kaggle Link</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+    <div class="projects1">
+        <div class="project1">
+            <div class="project1-description">
+               
+                <h3>Data Analytics - Power BI</h3><br><br><br>
+                <h3><span class="highlighted-text"> Store Sales Dashboard</span></h3>
+                <br>
+                <p>Visualizes key metrics: Orders, Profit, Sales, Ship Days
+                    Detailed breakdown by Region, Segment, Payment Mode, Ship Mode, and Category
+                    Sales and Profit trends over the months</p>
+                    <br>
+                    
+               
+            </div>
+            <img src="templates/pb2.jpeg" alt="Power Bi Project">
+        </div>
+        <div class="project1">
+            <img src="templates/WhatsApp Image 2024-07-17 at 10.31.25 PM.jpeg" alt="Art">
+            <div class="project1-description">
+                <h3><span class="highlighted-text"> Hobby: Art and Craft</span></h3>
+                <br>
+                <a href="https://in.pinterest.com/krupa_20_/" class = "button highlighted">Pinterest Link</a>
+                   
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section id="contact" class="contact-me">
+        <div class="contact-content">
+            <div class="contact-form-section">
+                <h2>Get in Touch</h2>
+                <form action="https://formsubmit.co/dharamshikrupa@gmail.com" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:dharamshikrupa@gmail.com" class="contact-link">
+                    <img src="templates/4550857_email_gmail_mail_sending_yahoo_icon.png" alt="Email Logo" class="contact-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/krupadharamshi" target="_blank" class="contact-link">
+                    <img src="templates/4747495_linked in_social media_networking_icon.png" alt="LinkedIn Logo" class="contact-icon">
+                </a>
+                <a href="https://github.com/krupa2002" target="_blank" class="contact-link">
+                    <img src="templates/317712_code repository_github_repository_resource_icon.png" alt="GitHub Logo" class="contact-icon">
+                </a>
+                <a href="https://medium.com/@dharamshikrupa" target="_blank" class="contact-link">
+                    <img src="templates/medium1.png" alt="Medium Logo" class="contact-icon">
+                </a>
+                
+                <a href="https://www.kaggle.com/krupadharamshi" target="_blank" class="contact-link">
+                    <img src="templates/8666317_kaggle_icon.png" alt="Kaggle Logo" class="contact-icon">
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="icon1.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
+    background-image: url('templates/Screenshot 2024-08-14 at 12.28.18 PM.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-content {
+    height: 100vh; /* Full viewport height for the main content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fallback background color */
+    background-image: url('templates/KRUPA DHARAMSHI2.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-image {
+    max-width: 400px;
+    margin-right: 20px;
+    border-radius: 10%; /* Makes the image circular */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #58585800; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.button:hover,
+a.button.highlighted {
+    background-color: #000000; /* Same highlight color for hover and always highlighted */
+    color: #fff;
+}
+.button:hover {
+    background-color: #b0afaf; /* Darker shade on hover */
+}
+
+.contact{
+    overflow: hidden;
+}
+
+.contact-me {
+    margin-right: -30px; /* this is the exact culprit */
+    margin-left: -30px;
+    margin-bottom: -100px;
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+    padding: 50px 20px;
+    background-image: url('templates/contact.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form-section,
+/* imp */
+.contact-info {
+    width: 45%;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.contact-form-section h2,
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .contact-me, .contact-me * {
+    border: 1px solid red; /* Temporary debugging border */
+/* }  */
+
+
+/* imp */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+
+
+
+/*  */
+/* imp */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-link:hover {
+    color: black;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: black;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.contact-info img {
+    width: 40px; 
+    height: 40px; 
+    margin: 0;
+}
+
+
+
+#nav-icon1 {
+    width: 60px;
+    height: 45px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#nav-icon1 span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: black;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+}
+
+#dropdown-menu {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 2;
+}
+
+#dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+#dropdown-menu a:hover {
+    background: black;
+    color: #fff;
+}
+
+
+/* Existing CSS */
+.hidden {
+    display: none;
+}
+
+/* .about-content {
+    background: white;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+/* Add new styles for Skills and Blogs section */
+.skills-section {
+    background: url('templates/newpic.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px 0;
+    color: #000;
+}
+
+.skills-content {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding: 20px;
+    /* background: white; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.skills-box {
+    padding: 10px;
+
+    /* background: white; */
+    border-radius: 10px;
+}
+
+.skills-box h1 {
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 36px;
+    padding: 0px;
+
+}
+
+.projects, .kaggle-ml, .medium-blogs, .power-bi-project, .hobby-art-craft, .projects1 {
+    margin-bottom: 50px;
+}
+
+.project, .kaggle-project, .medium-blog, .power-bi-description, .hobby-images, .project1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-description, .kaggle-description, .medium-description, .power-bi-description, .project1-description {
+    max-width: 45%;
+    /* flex: 1; */
+    /* margin-right: 20px; */
+}
+
+.highlighted-text {
+    background-color: #eaeaea; /* Highlight color */
+    color: #000000; /* Text color */
+    padding: 0.2em; /* Space around the text */
+    border-radius: 3px; /* Optional: rounded corners */
+}
+
+
+
+
+.project img, .kaggle-project img, .power-bi-description img, .hobby-images img,.project1 img  {
+    max-width: 45%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover, .kaggle-project img:hover, .power-bi-description img:hover, .hobby-images img:hover, .project1 img:hover {
+    transform: scale(1.05);
+}
+
+.skills-section a {
+    color: #000000; /* Customize link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.skills-section a:hover {
+    color: #000000;
+}
+
+.skills-section p {
+    margin-bottom: 10px;
+}
+
+.project1-description{
+    margin-right: 31.5%;
+}
+
+
